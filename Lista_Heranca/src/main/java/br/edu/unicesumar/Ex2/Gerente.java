@@ -12,8 +12,6 @@ public class Gerente extends Funcionario{
 
         System.out.printf("Digite o setor que o gerente é responsável: ");
         this.setor = scanner.nextLine();
-
-
     }
 
     /*por que override?

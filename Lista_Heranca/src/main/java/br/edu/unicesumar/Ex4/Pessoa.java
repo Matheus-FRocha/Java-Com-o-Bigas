@@ -10,13 +10,13 @@ public class Pessoa {
     public Pessoa(){
         Scanner scanner = new Scanner(System.in);
 
-        System.out.printf("Digite o nome: ");
+        System.out.printf("\nDigite o nome: ");
         this.nome = scanner.nextLine();
 
-        System.out.printf("\nDigite o CPF: ");
+        System.out.printf("Digite o CPF: ");
         this.cpf = scanner.nextLine();
 
-        System.out.printf("\nDigite o Endereço: ");
+        System.out.printf("Digite o Endereço: ");
         this.endereco = scanner.nextLine();
     }
 

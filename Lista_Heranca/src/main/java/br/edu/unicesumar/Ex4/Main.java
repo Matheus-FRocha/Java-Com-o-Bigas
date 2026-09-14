@@ -4,6 +4,13 @@ public class Main {
     public static void main(String[] args) {
 
         Cliente matheus = new Cliente();
-        ContaBancaria c1 = new ContaBancaria(matheus);
+        ContaCorrente cmatheus = new ContaCorrente(matheus);
+        matheus.ExibirDados();
+        cmatheus.ExibirDadosConta();
+
+        Cliente ligia = new Cliente();
+        ContaPoupanca cligia = new ContaPoupanca(ligia);
+        ligia.ExibirDados();
+        cligia.ExibirDadosConta();
     }
 }

@@ -5,7 +5,7 @@ public class Main {
 
         Aluno matheus = new Aluno();
 
-        Turma a = new Turma();
+        Turma a = new Turma(matheus);
         a.exibirDados();
     }
 }

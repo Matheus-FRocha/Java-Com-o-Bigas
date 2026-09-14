@@ -7,7 +7,7 @@ public class Turma {
     private Aluno[] alunos;
     private int proximaPosicaoLivre;
 
-    public Turma(){
+    public Turma(Aluno aluno){
         Scanner scanner = new Scanner(System.in);
 
         System.out.printf("Digite o nome da sala: ");
@@ -15,13 +15,15 @@ public class Turma {
 
         alunos = new Aluno[10];
         proximaPosicaoLivre = 0;
+
+        addAluno(aluno);
     }
 
     public void exibirDados(){
         System.out.printf("Sala: %s", sala);
         for (int i = 0;i<10;i++){
             if (alunos[i] != null) {
-                System.out.printf("Aluno %d", i + 1);
+                System.out.printf("\nAluno %d", i + 1);
                 System.out.println("----------------\n");
                 alunos[i].exibirDados();
             }

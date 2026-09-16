@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Dispositivo {
     private String nome;
     private int consumoWatts;
-    private boolean ligado=true;
+    private boolean ligado=false;
 
     public Dispositivo(){
         Scanner scanner = new Scanner(System.in);
@@ -26,6 +26,6 @@ public class Dispositivo {
     }
 
     public void exibirDados(){
-        System.out.printf("\nNome dispositivo: %s | Consumo em watts: %d ", nome, consumoWatts);
+        System.out.printf("\nNome dispositivo: %s | Consumo em watts: %d | Situação: %s\n", nome, consumoWatts, ligado ? "Ligado" : "Desligado");
     }
 }

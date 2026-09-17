@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class ArCondicionadoIot extends Dispositivo{
     private double temperaturaDecimal;
 
-    public ArCondicionadoIot(){
-        super();
+    public ArCondicionadoIot(Comodo comodo){
+        super(comodo);
 
         Scanner scanner = new Scanner(System.in);
 

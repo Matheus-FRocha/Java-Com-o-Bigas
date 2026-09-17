@@ -6,8 +6,9 @@ public class Dispositivo {
     private String nome;
     private int consumoWatts;
     private boolean ligado=false;
+    private Comodo comodo;
 
-    public Dispositivo(){
+    public Dispositivo(Comodo comodo){
         Scanner scanner = new Scanner(System.in);
 
         System.out.printf("Digite o nome do dispositivo: ");
@@ -15,6 +16,9 @@ public class Dispositivo {
 
         System.out.printf("Digite o consumo em Watts do dispositivo: ");
         this.consumoWatts = scanner.nextInt();
+
+        this.comodo = comodo;
+        this.comodo.addDispositivo(this);
     }
 
     public String getNome() {

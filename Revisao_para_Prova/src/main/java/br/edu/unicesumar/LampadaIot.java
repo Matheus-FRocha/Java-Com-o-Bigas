@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class LampadaIot extends Dispositivo{
     private String corHexadecimal;
 
-    public LampadaIot(){
-        super();
+    public LampadaIot(Comodo comodo){
+        super(comodo);
 
         Scanner scanner = new Scanner(System.in);
 

@@ -24,4 +24,8 @@ public class NaveEspacial {
     public String getNome() {
         return nome;
     }
+
+    public Hangar getHangar() {
+        return hangar;
+    }
 }

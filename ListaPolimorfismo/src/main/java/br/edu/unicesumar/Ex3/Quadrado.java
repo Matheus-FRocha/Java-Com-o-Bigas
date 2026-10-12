@@ -1,12 +1,14 @@
 package br.edu.unicesumar.Ex3;
 
 public class Quadrado extends FormaGeometrica {
+    private double lado;
 
-    public Quadrado(double raio) {
-        super(raio);
+    public Quadrado(double lado) {
+        this.lado = lado;
     }
 
-    public double calcularArea() {
-        return Math.PI * raio * raio;
+    @Override
+    public double calcularArea(){
+        return lado*lado;
     }
 }
